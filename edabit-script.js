@@ -77,10 +77,30 @@ points(1, 1);
 
 function addUp(num) {
   let sum = 0;
-  for (let i = 1; i < num; i--) {
+  for (let i = 1; i <= num; i++) {
     sum += i;
   }
   console.log(sum);
 }
 
-addUp(4);
+addUp(13);
+
+// ---------------------------------------------
+
+function makesTen(a, b) {
+  if (a == 10 || b == 10 || a + b == 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// ---------------------------------------------
+
+function checkEquality(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
