@@ -104,3 +104,77 @@ function checkEquality(a, b) {
     return false;
   }
 }
+
+// -=---------------------------------------------------
+
+function shiftToLeft(x, y) {
+  console.log(x ** y);
+}
+
+shiftToLeft(10, 3);
+
+// -=---------------------------------------------------
+
+//find min
+//find max
+
+function minMax(arr) {
+  for (let i = 0; i < arr.length; i++) {}
+}
+
+// -=---------------------------------------------------
+
+// Q? => Is it Christmas eve?
+//  determine date
+// do we put out milk and cookies or not?
+//  if date is christmas 24 put cookies out
+//  if not, don't
+
+const christmas = new Date("August 19, 1975 23:15:30");
+function timeForMilkAndCookies(date) {
+  const dateDays = christmas.getDate();
+  const dateMonth = christmas.getMonth();
+
+  console.log(dateDays);
+  console.log(dateMonth);
+  if (dateDays == 24 && dateMonth == 11) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+timeForMilkAndCookies();
+
+// -=---------------------------------------------------
+
+// Goal -> return string indicating which function returned the biggest number
+//  Call f
+//  Call G
+//  determine which returned a larger number
+
+function whichIsLarger(f, g) {
+  let a = f();
+  let b = g();
+  if (a > b) {
+    return "f";
+  } else if (a < b) {
+    return "g";
+  } else {
+    return "neither";
+  }
+}
+
+// -=---------------------------------------------------
+
+// Goal -> returns a base-2 (binary) representation of a base-10 (decimal) string number
+//  convert to string
+//
+//
+
+function binary(decimal) {
+  let a = decimal.toString();
+  console.log(a);
+}
+
+binary(5);
