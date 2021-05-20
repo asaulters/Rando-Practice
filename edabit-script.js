@@ -177,4 +177,25 @@ function binary(decimal) {
   console.log(a);
 }
 
-binary(5);
+binary(100);
+
+//
+
+function frames(minutes, fps) {
+  let frames = minutes * (fps * 60);
+  return frames;
+}
+
+frames(10, 1);
+
+//
+
+function comp(str1, str2) {
+  let a = str1;
+  let b = str2;
+  if (a.length == b.length) {
+    return true;
+  } else {
+    return false;
+  }
+}
