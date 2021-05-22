@@ -199,3 +199,51 @@ function comp(str1, str2) {
     return false;
   }
 }
+
+//
+
+function calculator(str) {
+  let a = str;
+  let b = eval(a);
+  console.log(b);
+}
+
+calculator("23+4*12*1054");
+
+//
+
+function divisible(num) {
+  if (num % 100 == 0) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+
+divisible(10000);
+
+//
+
+function dividesEvenly(a, b) {
+  if (a % b == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//
+// Q? How many walls can be painted?
+// 1. Find area of each wall
+// 2. Figure out how many wall areas can fit into the square meters avalible
+
+function howManyWalls(n, w, h) {
+  let wallArea = w * h;
+  let b = n / wallArea;
+  let total = Math.floor(b);
+  console.log(total);
+}
+
+howManyWalls(41, 3, 6);
+
+//
