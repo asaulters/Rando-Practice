@@ -247,3 +247,11 @@ function howManyWalls(n, w, h) {
 howManyWalls(41, 3, 6);
 
 //
+
+function returnNegative(n) {
+  if (n > 0) {
+    return -n;
+  } else {
+    return n;
+  }
+}
