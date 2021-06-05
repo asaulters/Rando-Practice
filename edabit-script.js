@@ -38,6 +38,7 @@ function bitwiseXOR(n1, n2) {
   console.log(a ^ b);
 }
 
+
 bitwiseAND(7, 12);
 bitwiseOR(7, 12);
 bitwiseXOR(7, 12);
@@ -255,3 +256,67 @@ function returnNegative(n) {
     return n;
   }
 }
+
+//
+
+function area(h, w) {
+  if (h > 0 && w > 0) {
+    return h * w;
+  } else {
+    return -1;
+  }
+}
+
+//
+
+function stringInt(str) {
+  let a = parseInt(str);
+  console.log(a);
+}
+
+stringInt("454");
+
+//
+// Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed.
+// This is calculated by subtracting the number of downvotes from upvotes.
+// Q? What is the vote total?
+// 1. Count all up votes
+// 2. subtract downvotes
+
+function getVoteCount(votes) {
+  var voteCount = new Object();
+  voteCount.upvotes = votes.upvotes;
+  voteCount.downvotes = votes.downvotes;
+  let count = voteCount.upvotes - voteCount.downvotes;
+
+  // console.log(voteCount.upvotes)
+  // console.log(voteCount.downvotes)
+  // console.log(count)
+  return count;
+}
+
+getVoteCount({ upvotes: 13, downvotes: 0 });
+
+//
+
+// Write a function that returns the length of a string. Make your function recursive.
+// Q? -> What is the string length?
+// 1. Set up var
+// 2. set up Loop
+// 3.
+
+function length(str) {
+  return str.length;
+}
+
+// Given two arguments, return an array which contains these two arguments.
+// Goal -> return array with args
+// 1. create array
+// 2. insert args into
+
+function makePair(num1, num2) {
+  let newArray = [num1, num2];
+  console.log(newArray);
+}
+
+makePair(2, 738);
