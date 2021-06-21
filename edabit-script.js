@@ -38,7 +38,6 @@ function bitwiseXOR(n1, n2) {
   console.log(a ^ b);
 }
 
-
 bitwiseAND(7, 12);
 bitwiseOR(7, 12);
 bitwiseXOR(7, 12);
@@ -320,3 +319,40 @@ function makePair(num1, num2) {
 }
 
 makePair(2, 738);
+
+//
+
+// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+function divisibleByFive(n) {
+  if (Number.isInteger(n / 5)) {
+    console.log(true);
+    return true;
+  } else {
+    console.log(false);
+    return false;
+  }
+}
+
+divisibleByFive(6);
+
+//
+
+// Create a function that takes a number n and returns the nth even number.
+
+function nthEven(n) {}
+
+
+// Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+function profitableGamble(prob, prize, pay) {
+	if (prob * prize > pay){
+    return true
+  } else {
+    return false;
+  }
+}
+
+// Fix the code in the Code tab so the function returns true if and only if x is equal to 7.
+function isSeven(x) {
+	return x="7"?false:true:false;
+}
