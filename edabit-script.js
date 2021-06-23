@@ -63,8 +63,6 @@ function animals(chickens, cows, pigs) {
 
 animals(2, 3, 5);
 
-
-
 // --------------------------
 
 function points(twoPointers, threePointers) {
@@ -344,17 +342,29 @@ divisibleByFive(6);
 
 function nthEven(n) {}
 
-
 // Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
 function profitableGamble(prob, prize, pay) {
-	if (prob * prize > pay){
-    return true
+  if (prob * prize > pay) {
+    return true;
   } else {
     return false;
   }
 }
 
 // Fix the code in the Code tab so the function returns true if and only if x is equal to 7.
-function isSeven(x) {
-	return x="7"?false:true:false;
+// function isSeven(x) {
+// 	return x="7"?false:true:false;
+// }
+
+// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+function addition(num) {
+  return num + 1;
 }
+
+// There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+function remainder(x, y) {
+  let a = x % y;
+  console.log(a);
+}
+remainder(7, 2);
