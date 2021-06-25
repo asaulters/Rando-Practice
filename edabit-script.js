@@ -375,9 +375,35 @@ remainder(7, 2);
 
 function leapYear(year) {
   //three conditions to find out the leap year
-  if ((0 == year % 4 && 0 != year % 100) || 0 == year % 400) {
+  if ((year % 4 == 0 && 0 != year % 100) || 0 == year % 400) {
     console.log("true");
   } else {
     console.log("false");
   }
+}
+const year = 2004;
+
+leapYear(year);
+
+// Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+
+// The person is at least 15 years old.
+// They have parental supervision.
+// The function accepts two parameters, age and isSupervised. Return a boolean.
+function acceptIntoMovie(age, isSupervised) {
+  // Check if 15+
+  // check if parent around
+  if (age >= 15 || isSupervised == true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Given an index and an array, return the value of the array with the given index.
+// goal -> return index val of an arr
+function valueAt(arr, i) {
+  /* find index avl of arr */
+  let a = arr[i];
+  return a;
 }
