@@ -425,3 +425,41 @@ function reverse(arr) {
   let a = arr;
   return a.reverse();
 }
+
+// Create a function that takes a number n and returns the nth even number.
+function nthEven(n) {
+  let a = n * 2 - 2;
+  console.log(a);
+}
+nthEven(4);
+
+// I'd like to calculate how long on average I've lived in a single house.
+
+// Given a person's age and the number of times they've moved house as moves,
+// return the average number of years that they've spent living in the same house.
+function yearsInOneHouse(age, moves) {
+  let a = age / (moves + 1);
+  let b = Math.round(a);
+  console.log(b);
+}
+
+yearsInOneHouse(15, 2);
+
+// Given an index and an array, return the value of the array with the given index.
+function valueAt(arr, i) {
+  let a = Math.floor(i);
+  console.log(arr[a]);
+}
+
+valueAt([1, 2, 3, 4, 5, 6], 10 / 2);
+
+// Create a function that accepts a measurement value in inches and returns the equivalent of the measurement value in feet.
+function inchesToFeet(inches) {
+  let a = Math.floor(inches / 12);
+  return a;
+}
+
+// Write a function that uses the ternary operator to return "yeah" if b is true, and "nope" otherwise.
+function yeah_nope(bool) {
+  return bool ? "yeah" : "nope";
+}
