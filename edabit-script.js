@@ -463,3 +463,23 @@ function inchesToFeet(inches) {
 function yeah_nope(bool) {
   return bool ? "yeah" : "nope";
 }
+
+// With ES6, you can assign variables from arrays in a much more succinct way. Create variables a and b from the
+// given array using the ES6 destructuring assignment syntax, where a === 1 and b === 2.
+const arr = [1, 2, 3, 4, 5, 6];
+{
+  let a = arr[0];
+  let b = arr[1];
+}
+
+// Create a function that calculates the chance of being an imposter. The formula for the chances of being an
+// imposter is 100 × (i / p) where i is the imposter count and p is the player count. Make sure to round the value
+// to the nearest integer and return the value as a percentage.
+// ?? what is the chance of being an imposter?
+// 1.
+function imposterFormula(i, p) {
+  let a = 100 * (i / p);
+  let b = Math.round(a);
+  console.log(b);
+}
+imposterFormula(3, 7);
