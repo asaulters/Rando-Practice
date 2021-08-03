@@ -483,3 +483,12 @@ function imposterFormula(i, p) {
   console.log(b);
 }
 imposterFormula(3, 7);
+
+// Create a function that returns how many possible arrangements can come from a certain number of switches (on / off).
+// In other words, for a given number of switches, how many different patterns of on and off can we have?
+// 1. count switches using a loop => i
+// 2. for each switch *2
+function posCom(num) {
+  return Math.pow(2, num);
+}
+posCom(3);
