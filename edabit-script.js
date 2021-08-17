@@ -492,3 +492,30 @@ function posCom(num) {
   return Math.pow(2, num);
 }
 posCom(3);
+
+// --------
+
+// Create a function that returns true if the first array can be nested inside the second.
+// arr1 can be nested inside arr2 if:
+// arr1's min is greater than arr2's min.
+// arr1's max is less than arr2's max.
+
+// MAin Q = can arr 1 be nested inside arr 2?
+//   chekc is arr1 min > arr2 min
+//     if true = answer is yes
+//   check is arr1 max < arr2 max
+//     if true = yes
+
+function canNest(arr1, arr2) {
+  let Arr1min = Math.min(arr1);
+  let Arr2min = Math.min(arr2);
+  let Arr1max = Math.max(arr1);
+  let Arr2max = Math.max(arr2);
+
+  if (Arr1min > Arr2min && Arr1max < Arr2max) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+canNest([1, 2, 3, 4], [0, 6]);
