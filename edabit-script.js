@@ -1,3 +1,5 @@
+const { removeAllListeners } = require("process");
+
 function printArray(number) {
   var newArray = [];
 
@@ -507,10 +509,10 @@ posCom(3);
 //     if true = yes
 
 function canNest(arr1, arr2) {
-  let Arr1min = Math.min(arr1);
-  let Arr2min = Math.min(arr2);
-  let Arr1max = Math.max(arr1);
-  let Arr2max = Math.max(arr2);
+  let Arr1min = Math.min(...arr1);
+  let Arr2min = Math.min(...arr2);
+  let Arr1max = Math.max(...arr1);
+  let Arr2max = Math.max(...arr2);
 
   if (Arr1min > Arr2min && Arr1max < Arr2max) {
     console.log(true);
@@ -519,3 +521,99 @@ function canNest(arr1, arr2) {
   }
 }
 canNest([1, 2, 3, 4], [0, 6]);
+
+//////
+// Create a function that takes a base number and an exponent number and returns the calculation.
+// Q? What is the calculation
+//   take number and put it by its exponent
+
+function calculateExponent(num, exp) {
+  let a = num ** exp;
+  return a;
+}
+
+//////////////
+// Due to a programming concept known as truthiness, certain values can be evaluated to (i.e. take the place of) booleans.
+// For example, 1 (or any number other than 0) is often equivalent to true, and 0 is often equivalent to false.
+
+// Create a function that returns the opposite of the given boolean, as a number.
+// Goal -> switch given boolean
+//   1. check param to see if true or false
+//   2. switch to  1 and 0
+function flipBool(b) {
+  if (b === true) {
+    return 0;
+  } else if (b === false) {
+    return 1;
+  } else if (b > 0) {
+    return 0;
+  } else {
+    return 1;
+  }
+}
+
+////
+// Create a function that takes a word and returns the new word without including the first character.
+// Goal -> return word withouth index 0
+//   take given word
+//   take first letter off
+//   return word without first letter
+
+function newWord(str) {
+  let a = str.substring(1);
+  console.log(a);
+}
+newWord("apple");
+
+/////////////////////
+
+// // Create a function which returns the number of true values there are in an array.
+// Q? -> How many true values in the Array
+//   1. Count how many
+
+function countTrue(arr) {
+  let a = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] === true) {
+      a++;
+    }
+  }
+  return a;
+}
+
+//
+// In a board game, a piece may advance 1-6 tiles forward depending on the number rolled on a six-sided dice.
+// If you advance your piece onto the same tile as another player's piece, both of you earn a bonus.
+// Given you and your friend's tile number, create a function that returns if it's possible to earn a bonus when you roll the dice.
+// Main Q? -> is it possible to get a bonus when you roll the dice? You can't move backwards.
+// 1 check if pos or neg
+// 2 Figure if you are before or after the first roll
+//   1. if after return false is before continue
+// 3 figure if you are within 6 of the first roll
+//   1. if after return false is before continue
+function possibleBonus(a, b) {
+  let c = b - a;
+  if (a >= 0 && b >= 0 && a < b && c < 7) {
+    console.log("true");
+    return true;
+  } else {
+    console.log("false");
+    return false;
+  }
+}
+
+possibleBonus(1, 9);
+
+//
+// Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters, num1, num2, and an operator.
+// Use the operator on number 1 and 2.
+// Q? -> What is the answer?
+//   plug into formula
+
+function operate(num1, num2, operator) {
+  let a = num1 + operator + num2;
+  console.log(a);
+  return a;
+}
+operate(1, 1, "+");
+// asdfsa
