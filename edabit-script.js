@@ -604,7 +604,7 @@ function possibleBonus(a, b) {
 
 possibleBonus(1, 9);
 
-//
+//                                                     4333333333333333333333333333333333333333333333333333333333
 // Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters, num1, num2, and an operator.
 // Use the operator on number 1 and 2.
 // Q? -> What is the answer?
@@ -618,3 +618,17 @@ function operate(num1, num2, operator) {
 operate(1, 1, "+");
 // asdfsa
 asdfa;
+
+// Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+// Q? => Which of the two given numbers are larger
+// 1. split the given numbers
+// 2. Compare the two
+// 3. if the first is bigger => true, if not => false
+function largestSwap(num) {
+  let index = 1;
+  let a = num.charAt(index);
+  console.log(a);
+  let b = index + index;
+  console.log(b);
+}
+largestSwap(432);
