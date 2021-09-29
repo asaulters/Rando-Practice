@@ -616,8 +616,6 @@ function operate(num1, num2, operator) {
   return a;
 }
 operate(1, 1, "+");
-// asdfsa
-asdfa;
 
 // Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
 // Q? => Which of the two given numbers are larger
@@ -625,10 +623,8 @@ asdfa;
 // 2. Compare the two
 // 3. if the first is bigger => true, if not => false
 function largestSwap(num) {
-  let index = 1;
-  let a = num.charAt(index);
-  console.log(a);
-  let b = index + index;
-  console.log(b);
+  let a = num;
+
+  console.log(a.charAt(1, 2));
 }
 largestSwap(432);
