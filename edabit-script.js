@@ -623,8 +623,19 @@ operate(1, 1, "+");
 // 2. Compare the two
 // 3. if the first is bigger => true, if not => false
 function largestSwap(num) {
-  let a = num;
-
-  console.log(a.charAt(1, 2));
+  let a = num.toString();
+  let first = a.charAt(0);
+  let second = a.charAt(1);
+  console.log(first);
+  console.log(second);
+  if (first > second || first === second) {
+    console.log(true);
+    return true;
+  } else if (second > first) {
+    console.log("False");
+    return false;
+  }
 }
-largestSwap(432);
+largestSwap(33);
+
+ytc;
