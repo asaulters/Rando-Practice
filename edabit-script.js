@@ -638,5 +638,42 @@ function largestSwap(num) {
 }
 largestSwap(33);
 
-ytc;
-sdfg;
+// Goal => Upercase the first letter of each word in the string
+// 1. split the string into different words
+// 2. target first letter
+// 3. change that lettter to upper case
+// 4. return updated string
+const toJadenCase = function (str) {
+  var str = "How can mirrors be real if our eyes aren't real";
+  var array1 = str.split(" ");
+  var newarray1 = [];
+
+  for (let x = 0; x < array1; x++) {
+    newarray1.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+    newarray1.join(" ");
+  }
+
+  console.log(array1);
+  console.log(newarray1);
+};
+
+toJadenCase();
+
+//
+
+// //
+// Create a function that calculates the number of different squares in an n * n square grid.
+// Goal => How many squares in a grid?
+// 1. squared pyramid
+
+// 2. add the n^n to it's squared number
+
+function numberSquares(n) {
+  for (let i; i <= n; i++) {
+    let a = i * i;
+  }
+  let a = n * n;
+  let b = a - 1;
+  console.log(a + b);
+}
+numberSquares(10);
