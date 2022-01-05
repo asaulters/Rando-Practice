@@ -677,3 +677,4 @@ function numberSquares(n) {
   console.log(a + b);
 }
 numberSquares(10);
+ss;
